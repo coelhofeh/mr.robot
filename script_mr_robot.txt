@@ -1,0 +1,58 @@
+#!/bin/bash
+# Script Mr. Robot - Felipe Coelho RM95964
+
+
+NUM=$(($RANDOM%4))
+read-p "Digite a pergunta para o Mr.Robot: " pergunta
+case "$pergunta" in
+        *'namorando'*)
+                 if [ $NUM -eq 1 ]; then
+                          echo "Não, Solteira, pois sou uma IA."
+                 elif [ $NUM -eq 2 ]; then
+                          echo "Ainda pergunta?, não porque sou uma IA."
+                 elif [ $NUM -eq 3 ]; then
+                          echo "To nada! Sou uma inteligência artificial."
+                 fi
+                 ;;
+esac
+
+case "$pergunta" in
+        *'criador'*)
+                 if [ $NUM -eq 1 ]; then
+                          echo "Meu criador é o felipe coelho RM95964."
+                 elif [ $NUM -eq 2 ]; then
+                          echo "Quem me criou se chama felipe coelho de rm95964."
+                 elif [ $NUM -eq 3 ]; then
+                          echo "Ah! Foi um cara chamado felipe coelho de rm95964."
+                 fi
+                 ;;
+esac
+
+
+case "$pergunta" in
+        *'nome'*)
+                 if [ $NUM -eq 1 ]; then
+                          echo "My name is Mr. Robot."
+                 elif [ $NUM -eq 2 ]; then
+                          echo "Eu me chamo inteligência artificial Mr. Robot."
+                 elif [ $NUM -eq 3 ]; then
+                          echo "Meu nome é IA Mr Robot."
+                 fi
+                 ;;
+esac
+
+function atualizar()
+{
+         apt upgrade
+}
+case "$pergunta" in
+        *'atualize'*)
+                 if [ $NUM -eq 1 ]; then
+                          echo "Sim senhor, atualizando."
+                 elif [ $NUM -eq 2 ]; then
+                          echo "La vamos nós, ATUALIZAR!."
+                 elif [ $NUM -eq 3 ]; then
+                          echo "Pra agora! ATUALIZANDO."
+                 fi
+                 ;;
+esac
